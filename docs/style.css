@@ -1,16 +1,16 @@
 :root {
   --verde: #7CFF00;
-  --blanco: #ffffff;
-  --negro: #121212;
-  --gris: #f2f2f2;
+  --fondo: #ffffff;
+  --texto: #000000;
+  --card: #f2f2f2;
 }
 
-/* MODO CLARO */
+/* GENERAL */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: var(--blanco);
-  color: #000;
+  font-family: Arial, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
   transition: background 0.3s, color 0.3s;
 }
 
@@ -29,15 +29,18 @@ section {
 h2 {
   border-bottom: 3px solid var(--verde);
   display: inline-block;
+  padding-bottom: 5px;
 }
 
-.materia, .proyecto {
-  background: var(--gris);
+/* TARJETAS */
+.card {
+  background: var(--card);
   padding: 20px;
   margin: 20px 0;
   border-left: 6px solid var(--verde);
 }
 
+/* BOTONES */
 .btn {
   display: inline-block;
   margin-top: 10px;
@@ -48,7 +51,7 @@ h2 {
   font-weight: bold;
 }
 
-.subproyectos a {
+.sub a {
   display: inline-block;
   margin: 8px 8px 0 0;
   padding: 6px 10px;
@@ -57,27 +60,16 @@ h2 {
   color: #000;
 }
 
+/* FOOTER */
 footer {
+  background: var(--verde);
   text-align: center;
   padding: 15px;
-  background: var(--verde);
 }
 
 /* MODO OSCURO */
 body.dark {
-  background: var(--negro);
-  color: var(--blanco);
-}
-
-body.dark .materia,
-body.dark .proyecto {
-  background: #1e1e1e;
-}
-
-body.dark a {
-  color: var(--blanco);
-}
-
-body.dark .btn {
-  color: #000;
+  --fondo: #121212;
+  --texto: #ffffff;
+  --card: #1e1e1e;
 }
