@@ -1,82 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
   <meta charset="UTF-8">
-  <title>Mis Proyectos - GitHub</title>
-  style.css
-
+  <title>Presentación de Proyectos - GitHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <h1>Presentación de Proyectos del Curso</h1>
+    <h1>Proyectos del Curso</h1>
     <button id="themeToggle">🌙 Modo oscuro</button>
   </header>
 
   <!-- SECCIÓN 1 -->
-  <section id="intro">
+  <section>
     <h2>Introducción</h2>
     <p>
-      Durante este curso hemos trabajado con diferentes tecnologías y lenguajes,
-      aprendiendo a usar GitHub como herramienta principal para guardar,
-      organizar y presentar nuestros proyectos.
+      Durante este curso hemos aprendido a trabajar con diferentes tecnologías
+      y a utilizar GitHub para organizar, versionar y presentar nuestros proyectos.
     </p>
   </section>
 
   <!-- SECCIÓN 2 -->
-  <section id="materias">
-    <h2>Materias del curso</h2>
+  <section>
+    <h2>Materias</h2>
 
-    <div class="materia">
+    <div class="card">
       <h3>Lenguajes de marcas</h3>
       <p>Creación de páginas web usando HTML y CSS.</p>
     </div>
 
-    <div class="materia">
+    <div class="card">
       <h3>Programación</h3>
-      <p>Uso de JavaScript para dar interactividad a las webs.</p>
+      <p>Uso de JavaScript para añadir interactividad.</p>
     </div>
 
-    <div class="materia">
+    <div class="card">
       <h3>Sistemas</h3>
-      <p>Trabajo con entornos, repositorios y organización de archivos.</p>
+      <p>Gestión de repositorios y estructura de proyectos.</p>
     </div>
   </section>
 
   <!-- SECCIÓN 3 -->
-  <section id="proyectos">
-    <h2>Proyectos del curso</h2>
+  <section>
+    <h2>Proyectos</h2>
 
-    <!-- PROYECTO -->
-    <div class="proyecto">
+    <div class="card">
       <h3>Proyecto 1</h3>
-      <p>Breve explicación del proyecto.</p>
-      <a class="btn" href="https://github.com/SantiMR2025/Projecte2" target="_blank">Ver repositorio</a>
+      <p>Breve descripción del proyecto.</p>
+      <a class="btn" href="https://github.com/USUARIO/REPO1" target="_blank">
+        Ver repositorio
+      </a>
 
-      <div class="subproyectos">
-        <a href="https://github.com/SantiMR2025/Projecte2/tree/main/T02" target="_blank">Carpeta 1</a>
-        <a href="https://github.com/SantiMR2025/Projecte2/blob/main/T02/Solucio.md" target="_blank">index.html</a>
+      <div class="sub">
+        <a href="https://github.com/USUARIO/REPO1/tree/main/carpeta" target="_blank">Carpeta</a>
+        <a href="https://github.com/USUARIO/REPO1/blob/main/index.html" target="_blank">index.html</a>
       </div>
     </div>
 
-    <!-- DUPLICA ESTE BLOQUE HASTA 8 PROYECTOS -->
-    <div class="proyecto">
-      <h3>Proyecto 2</h3>
-      <p>Breve explicación del proyecto.</p>
-      <a class="btn" href="#" target="_blank">Ver repositorio</a>
-
-      <div class="subproyectos">
-        <a href="#" target="_blank">Trabajo 1</a>
-        <a href="#" target="_blank">Trabajo 2</a>
-      </div>
-    </div>
-
+    <!-- Duplica este bloque hasta tener los 8 proyectos -->
   </section>
 
   <footer>
-    <p>Curso 2025-2026 · Escuela Pia Santa Anna · Mataró</p>
+    <p>Escuela Pia Santa Anna · Mataró · Curso 2025‑2026</p>
   </footer>
 
-  <script.jsscript>
+  <script src="script.js"></script>
 </body>
 </html>
