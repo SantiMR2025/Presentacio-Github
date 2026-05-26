@@ -1,4 +1,3 @@
-
 const toggle = document.getElementById("themeToggle");
 
 toggle.addEventListener("click", () => {
