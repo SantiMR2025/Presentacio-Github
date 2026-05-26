@@ -2,80 +2,80 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Presentación de Proyectos - GitHub</title>
+  <title>Presentación de Proyectos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Proyectos del Curso</h1>
-    <button id="themeToggle">🌙 Modo oscuro</button>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#intro">Introducción</a></li>
+      <li><a href="#materias">Materias</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div>
+      <h1>Proyectos del Curso</h1>
+      <p class="subtitle">Repositorio completo de trabajos realizados</p>
+    </div>
+    <button id="themeToggle" class="theme-btn">🌙</button>
   </header>
 
-  <!-- SECCIÓN 1 -->
-  <section>
-    <h2>Introducción</h2>
-    <p>
-      Durante este curso hemos aprendido a trabajar con diferentes tecnologías
-      y a utilizar GitHub para organizar, versionar y presentar nuestros proyectos.
-    </p>
-  </section>
+  <main>
 
-  <!-- SECCIÓN 2 -->
-  <section>
-    <h2>Materias</h2>
+    <section id="intro">
+      <h2>Introducción</h2>
+      <p>
+        Durante este curso hemos aprendido a desarrollar páginas web
+        y a utilizar GitHub para organizar y presentar nuestros proyectos.
+      </p>
+    </section>
 
-    <div class="card">
-      <h3>Lenguajes de marcas</h3>
-      <p>Creación de páginas web usando HTML y CSS.</p>
-    </div>
+    <section id="materias">
+      <h2>Materias</h2>
 
-    <div class="card">
-      <h3>Programación</h3>
-      <p>Uso de JavaScript para añadir interactividad.</p>
-    </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Lenguajes de marcas</h3>
+          <p>HTML y CSS para crear páginas web estructuradas.</p>
+        </div>
 
-    <div class="card">
-      <h3>Sistemas</h3>
-      <p>Gestión de repositorios y estructura de proyectos.</p>
-    </div>
-  </section>
+        <div class="card">
+          <h3>Programación</h3>
+          <p>JavaScript para añadir interactividad.</p>
+        </div>
 
-  <!-- SECCIÓN 3 -->
-  
-<section>
-  <h2>Proyectos</h2>
+        <div class="card">
+          <h3>Sistemas</h3>
+          <p>Uso de GitHub y organización de proyectos.</p>
+        </div>
+      </div>
+    </section>
 
-  <div class="card project">
-    <h3>Proyecto 1 – Web personal</h3>
-    <p>
-      Desarrollo de una página web personal utilizando HTML y CSS,
-      aplicando estructura semántica y diseño visual.
-    </p>
+    <section id="proyectos">
+      <h2>Proyectos</h2>
 
-    <a href="proyectos/proyecto1.html" class="btn">
-      Ver proyecto
-    </a>
-  </div>
+      <div class="card project">
+        <h3>Proyecto 1 – Web personal</h3>
+        <p>
+          Creación de una página web personal usando HTML y CSS,
+          aplicando estructura semántica y estilos visuales.
+        </p>
+        <a href="proyectos/proyecto1.html" class="btn">
+          Ver proyecto
+        </a>
+      </div>
 
-  <div class="card project">
-    <h3>Proyecto 2 – JavaScript interactivo</h3>
-    <p>
-      Proyecto enfocado en el uso de JavaScript para crear
-      interacciones dinámicas con el usuario.
-    </p>
+      <!-- Duplica este bloque para más proyectos -->
+    </section>
 
-    <a href="proyectos/proyecto2.html" class="btn">
-      Ver proyecto
-    </a>
-  </div>
-
-</section>
-
-
-    <!-- Duplica este bloque hasta tener los 8 proyectos -->
-  </section>
+  </main>
 
   <footer>
     <p>Escuela Pia Santa Anna · Mataró · Curso 2025‑2026</p>
